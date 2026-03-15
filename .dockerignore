@@ -1,0 +1,34 @@
+# Dependencies (reinstalled in container)
+node_modules
+.pnp
+.pnp.js
+
+# Build output (rebuilt in container)
+.next
+out
+build
+dist
+
+# Git
+.git
+.gitignore
+
+# Env files (pass at runtime)
+.env
+.env.*
+!.env.example
+
+# Debug / IDE
+*.log
+.DS_Store
+.idea
+.vscode
+
+# Docs and scripts (not needed at runtime)
+README.md
+run.bat
+run.ps1
+
+# Misc
+*.md
+.editorconfig

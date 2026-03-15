@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      # Optional: set a strong secret in production
+      - SESSION_PASSWORD=${SESSION_PASSWORD:-change_me_in_production_32_chars_min}
+    restart: unless-stopped
