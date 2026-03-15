@@ -25,3 +25,6 @@ npm-debug.log*
 
 # Vercel
 .vercel
+
+# Windows reserved name (can appear from shell redirects)
+nul
